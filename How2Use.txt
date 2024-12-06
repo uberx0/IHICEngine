@@ -1,0 +1,51 @@
+How to Create a Map for the Game (Level File Format: 1.lvl)
+Map Format:
+
+Use a text file with a .lvl extension (e.g., 1.lvl).
+The map consists of numbers:
+1 represents walls (impassable).
+0 represents open paths (walkable spaces).
+2 represents the player's starting position.
+3 represents enemies.
+4 represents the finish point.
+Creating the Map:
+
+Create a text file with a .lvl extension (for example, 1.lvl).
+Each line in the file corresponds to one row in the game map.
+Each number (either 1, 0, 2, 3, or 4) in the row represents a specific type of space.
+Basic Structure:
+
+The map should be surrounded by walls (1), ensuring the player cannot go outside the boundaries.
+The player (2) must be placed in an open path (0).
+Enemies (3) and the finish (4) should also be placed on open paths, not in walls.
+Example Level File (1.lvl):
+
+1111111111
+1200000001
+1011101111
+1000100001
+1110101011
+1000101001
+1010111011
+1000000041
+1111111111
+
+1: Walls
+0: Open paths
+2: Player's starting position (to be added at a specific point in an open path)
+3: Enemy (to be added at a point in an open path)
+4: Finish (to be added at a point in an open path)
+How to Place Key Elements:
+
+Player's Starting Position (2): This must be at an open spot (i.e., a 0), where the player begins the game.
+Enemies (3): Place them at a specific location to create challenges for the player.
+Finish (4): Mark the location where the player must reach to win the level.
+Save the File:
+
+Save the text file with a .lvl extension (e.g., 1.lvl) and place it in the lvls directory of the game.
+
+U can install name of the window by writing something like "#name of the window". U need write it before u write map scheme.
+U also can add some music by writing !nameofthesong.mp3/.ogg and other after writing name of the window. Dont forget to put music file
+in folder "music".
+
+That all. Goodluck!
